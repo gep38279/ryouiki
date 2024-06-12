@@ -2,11 +2,11 @@ import cv2
 from ultralytics import YOLO
 import numpy as np
 
-path = "ex01.jpg"
+path = "https://cs.kwansei.ac.jp/~kitamura/lecture/RyoikiJisshu/images/ex1.jpg"
 img = cv2.imread(path)
 
 model = YOLO("yolov8x-pose.pt")
-results = model("ex01.jpg", save=True,
+results = model(path, save=True,
 save_txt=True, save_conf=True)
 keypoints = results[0].keypoints
 print(keypoints.data)

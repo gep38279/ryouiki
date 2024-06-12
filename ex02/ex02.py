@@ -5,7 +5,7 @@ import math
 
 
 model = YOLO("yolov8x-pose.pt")
-paths = ["ex1.jpg","ex2_307.jpg","ex2_336.jpg","ex2_2015.jpg","ex2_3077.jpg","ex2_5175.jpg"]
+paths = ["https://cs.kwansei.ac.jp/~kitamura/lecture/RyoikiJisshu/images/ex1.jpg","https://cs.kwansei.ac.jp/~kitamura/lecture/RyoikiJisshu/images/ex2_307.jpg","https://cs.kwansei.ac.jp/~kitamura/lecture/RyoikiJisshu/images/ex2_336.jpg","https://cs.kwansei.ac.jp/~kitamura/lecture/RyoikiJisshu/images/ex2_2015.jpg","https://cs.kwansei.ac.jp/~kitamura/lecture/RyoikiJisshu/images/ex2_3077.jpg","https://cs.kwansei.ac.jp/~kitamura/lecture/RyoikiJisshu/images/ex2_5175.jpg"]
 img = []
 results = []
 
