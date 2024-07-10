@@ -1,6 +1,5 @@
 import cv2
 from ultralytics import YOLO
-import mediapipe as mp
 import math
 
 model = YOLO("yolov8x-pose.pt")
