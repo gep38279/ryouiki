@@ -32,9 +32,8 @@ while cap.isOpened() :
     boxes = results[0].boxes
     class_names = results[0].names
 
-    # ボックスごとにループして人物を検出
     for box in boxes:
-        data = box.data.cpu().numpy()[0]  # CUDAテンソルをCPUテンソルに変換してからnumpy配列に変換
+        data = box.data.cpu().numpy()[0]  
         x1, y1, x2, y2, conf, cls = data
         class_id = int(cls)
         if class_names[class_id] == 'person':
